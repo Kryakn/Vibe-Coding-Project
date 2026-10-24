@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Discover delicious food, handcrafted coffee, and a welcoming atmosphere at our hotel cafe. Explore the menu and reserve your table.">
+
+    <title>The Courtyard Cafe | Hotel Cafe & Kitchen</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JavaScript -->
+     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        A good day starts here
+        <span>✦</span>
+        Coffee, comfort & good company
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+
+        <a href="#home" class="brand">
+            <span class="brand-mark">C<span>·</span></span>
+
+            <span class="brand-name">
+                THE COURTYARD
+                <small>CAFE & KITCHEN</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#story">Our Story</a>
+            <a href="#menu">The Menu</a>
+            <a href="#space">Our Space</a>
+            <a href="#visit">Find Us</a>
+
+            <a href="#booking" class="nav-cta">
+                Book a Table <span>↗</span>
+            </a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <div class="hero-image"></div>
+            <div class="hero-shade"></div>
+
+            <div class="hero-content">
+
+                <p class="eyebrow light">
+                    YOUR NEIGHBOURHOOD HIDEAWAY
+                </p>
+
+                <h1>
+                    Make room<br>
+                    for <em>something</em><br>
+                    delicious.
+                </h1>
+
+                <p class="hero-copy">
+                    From your first cup of coffee to one more bite
+                    shared with friends, find your favourite little
+                    pause right here.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#menu" class="button button-cream">
+                        Explore the Menu <span>↗</span>
+                    </a>
+
+                    <a href="#story" class="text-link light-link">
+                        Get to Know Us <span>↓</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-note">
+                <span class="note-star">✳</span>
+                <span>
+                    GOOD FOOD.<br>
+                    BETTER MOMENTS.
+                </span>
+            </div>
+
+            <div class="hero-counter">
+                <span>01</span> / A PLACE TO UNWIND
+            </div>
+
+        </section>
+
+        <!-- About Section -->
+        <section class="intro section-pad" id="story">
+
+            <div class="intro-label">
+                <span class="line"></span>
+                <p class="eyebrow">A WARM WELCOME, ALWAYS</p>
+            </div>
+
+            <div class="intro-main">
+
+                <h2>
+                    Not just a cafe.<br>
+                    <em>Your kind of place.</em>
+                </h2>
+
+                <div class="intro-copy">
+
+                    <p>
+                        Come in for the coffee. Stay for the conversation.
+                        At The Courtyard, thoughtful plates, comforting
+                        flavours, and a relaxed setting turn everyday
+                        visits into little occasions.
+                    </p>
+
+                    <a href="#visit" class="text-link">
+                        Come Say Hello <span>↗</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="values">
+
+                <div>
+                    <span class="value-icon">✳</span>
+                    <h3>Made with Care</h3>
+                    <p>
+                        Freshly prepared favourites, made for the moment.
+                    </p>
+                </div>
+
+                <div>
+                    <span class="value-icon">☕</span>
+                    <h3>Good Coffee, Always</h3>
+                    <p>
+                        Your familiar cup, or something new to discover.
+                    </p>
+                </div>
+
+                <div>
+                    <span class="value-icon">♡</span>
+                    <h3>Room for Everyone</h3>
+                    <p>
+                        Easy catch-ups, family meals, and unhurried afternoons.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section section-pad" id="menu">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="eyebrow">A FEW HOUSE FAVOURITES</p>
+
+                    <h2>
+                        Made to be <em>savoured.</em>
+                    </h2>
+                </div>
+
+                <p>
+                    Something for the early riser, the sweet tooth,
+                    and the "let's order one more" person.
+                </p>
+
+            </div>
+
+            <div class="menu-grid">
+
+                <!-- Menu Item 1 -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=900&q=85"
+                        alt="Iced coffee with milk"
+                        loading="lazy">
+
+                    <div class="dish-meta">
+
+                        <div>
+                            <span class="dish-type">THE PICK-ME-UP</span>
+                            <h3>Signature Cold Coffee</h3>
+                        </div>
+
+                        <span class="price">₹180</span>
+
+                    </div>
+
+                    <p>
+                        Rich, chilled, and just the right kind of indulgent.
+                    </p>
+
+                </article>
+
+                <!-- Menu Item 2 -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=900&q=85"
+                        alt="Fresh breakfast served on a plate"
+                        loading="lazy">
+
+                    <div class="dish-meta">
+
+                        <div>
+                            <span class="dish-type">THE BRUNCH CLUB</span>
+                            <h3>Garden Breakfast Plate</h3>
+                        </div>
+
+                        <span class="price">₹320</span>
+
+                    </div>
+
+                    <p>
+                        A fresh, colourful start with a little bit of everything.
+                    </p>
+
+                </article>
+
+                <!-- Menu Item 3 -->
+                <article class="dish-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85"
+                        alt="Chocolate cake with frosting"
+                        loading="lazy">
+
+                    <div class="dish-meta">
+
+                        <div>
+                            <span class="dish-type">SOMETHING SWEET</span>
+                            <h3>Chocolate Celebration Cake</h3>
+                        </div>
+
+                        <span class="price">₹220</span>
+
+                    </div>
+
+                    <p>
+                        Soft, chocolatey, and always worth saving room for.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="menu-foot">
+
+                <span>
+                    Seasonal ingredients. Familiar favourites.
+                    Little surprises.
+                </span>
+
+                <a href="#booking" class="button button-dark">
+                    Save Me a Seat <span>↗</span>
+                </a>
+
+            </div>
+
+            <p class="fine-print">
+                Sample menu and prices. Replace with the cafe's actual offerings.
+            </p>
+
+        </section>
+
+        <!-- Cafe Experience Section -->
+        <section class="feature" id="space">
+
+            <div class="feature-photo"></div>
+
+            <div class="feature-content">
+
+                <p class="eyebrow light">
+                    STAY A LITTLE LONGER
+                </p>
+
+                <h2>
+                    Your table.<br>
+                    Your people.<br>
+                    <em>Your moment.</em>
+                </h2>
+
+                <p>
+                    Sunlit mornings, cosy corners, and tables made
+                    for sharing stories. Whether it's a quick coffee
+                    or a long lunch, there's a place waiting for you.
+                </p>
+
+                <a href="#booking" class="button button-cream">
+                    Plan Your Visit <span>↗</span>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- Location Section -->
+        <section class="visit-section section-pad" id="visit">
+
+            <div class="visit-copy">
+
+                <p class="eyebrow">WE'LL PUT THE KETTLE ON</p>
+
+                <h2>
+                    Good things are<br>
+                    <em>closer than you think.</em>
+                </h2>
+
+                <p>
+                    Drop by for a coffee, meet someone over lunch,
+                    or make an ordinary day feel a little special.
+                </p>
+
+                <div class="visit-detail">
+
+                    <span class="detail-icon">⌖</span>
+
+                    <div>
+                        <strong>Find Your Way Here</strong>
+                        <p>[Add hotel / cafe address]</p>
+                    </div>
+
+                </div>
+
+                <div class="visit-detail">
+
+                    <span class="detail-icon">◷</span>
+
+                    <div>
+                        <strong>When We're Open</strong>
+                        <p>[Add cafe opening hours]</p>
+                    </div>
+
+                </div>
+
+                <div class="visit-detail">
+
+                    <span class="detail-icon">☎</span>
+
+                    <div>
+                        <strong>Let's Talk</strong>
+                        <p>[Add phone number]</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="visit-image">
+
+                <div class="image-caption">
+                    A LITTLE COFFEE. A LOT OF COMFORT.
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Book a Table Section -->
+        <section class="booking-section section-pad" id="booking">
+
+            <div class="booking-heading">
+
+                <p class="eyebrow light">
+                    YOUR TABLE IS WAITING
+                </p>
+
+                <h2>
+                    Let's make it<br>
+                    <em>a date.</em>
+                </h2>
+
+                <p>
+                    Tell us when you're coming. We'll help make
+                    your visit a good one.
+                </p>
+
+            </div>
+
+            <form class="booking-form" id="bookingForm" method="post">
+
+                <div class="form-row">
+
+                    <label>
+                        Your Name
+
+                        <input
+                            type="text"
+                            name="name"
+                            placeholder="Full name"
+                            autocomplete="name"
+                            required>
+                    </label>
+
+                    <label>
+                        Phone Number
+
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="+91 98765 43210"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+                </div>
+
+                <div class="form-row">
+
+                    <label>
+                        Date
+
+                        <input
+                            type="date"
+                            name="date"
+                            id="bookingDate"
+                            required>
+                    </label>
+
+                    <label>
+                        Preferred Time
+
+                        <select name="time" required>
+
+                            <option value="">Choose a time</option>
+                            <option>09:00 AM</option>
+                            <option>10:00 AM</option>
+                            <option>11:00 AM</option>
+                            <option>12:00 PM</option>
+                            <option>01:00 PM</option>
+                            <option>02:00 PM</option>
+                            <option>04:00 PM</option>
+                            <option>05:00 PM</option>
+                            <option>06:00 PM</option>
+                            <option>07:00 PM</option>
+                            <option>08:00 PM</option>
+                            <option>09:00 PM</option>
+
+                        </select>
+
+                    </label>
+
+                </div>
+
+                <div class="form-row">
+
+                    <label>
+                        Number of Guests
+
+                        <select name="guests" required>
+
+                            <option value="1">1 Guest</option>
+                            <option value="2" selected>2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7+">7+ Guests</option>
+
+                        </select>
+
+                    </label>
+
+                    <label>
+                        Special Requests
+
+                        <input
+                            type="text"
+                            name="notes"
+                            placeholder="Birthday, seating preference...">
+
+                    </label>
+
+                </div>
+
+                <button type="submit" class="button button-cream submit-button">
+                    Request a Table <span>↗</span>
+                </button>
+
+                <p class="form-note">
+                    Book your Table and make it Memorable......
+                </p>
+
+                <p
+                    class="form-message"
+                    id="formMessage"
+                    role="status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <a href="#home" class="brand footer-brand">
+
+            <span class="brand-mark">C<span>·</span></span>
+
+            <span class="brand-name">
+                THE COURTYARD
+                <small>CAFE & KITCHEN</small>
+            </span>
+
+        </a>
+
+        <p>Good food. Better moments.</p>
+
+        <div class="footer-links">
+            <a href="#menu">Menu</a>
+            <a href="#visit">Find Us</a>
+            <a href="#booking">Book a Table</a>
+        </div>
+
+        <small class="copyright">
+            © <span id="year"></span> The Courtyard Cafe.
+            Replace demo details before launch.
+        </small>
+
+    </footer>
+
+</body>
+</html>
